@@ -1,0 +1,1 @@
+$(function(){$(".box-list .item .item-title").click(function(){var i=$(this).parents(".item");i.is(".active")?i.removeClass("active"):($(".box-list .item.active").removeClass("active"),i.addClass("active"))})});
