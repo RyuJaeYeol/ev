@@ -1,1 +1,1 @@
-$(function(){});
+$(function(){var t=$("#inputSearch"),i=$(".list li.item"),n=function(t){if(t=$.trim(t),String(t).length<=0)return void i.show();i.each(function(){0===String($(this).attr("data-text")).indexOf(t)?$(this).show():$(this).hide()})};t.on("propertychange change keyup paste input",function(){n($.trim($(this).val()))})});
