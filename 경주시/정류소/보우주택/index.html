@@ -29,7 +29,8 @@
 	<meta name="HandheldFriendly" content="True">
 	<meta name="MobileOptimized" content="320">
 
-		
+							<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=40563640974538c7722ebb33897ddb7a"></script>
+			
 	
 	<meta property="og:type" content="article">
 	<meta property="og:site_name" content="경주시내버스">
@@ -54,7 +55,7 @@
 						
 	<link rel="alternate" type="application/rss+xml" title="경주시내버스" href="https://gjbus.yohan1002.com/atom.xml"/>
 
-			<link href="/res/css/min/8f3a3620b638313bdf778bcdd227c1e7.css" type="text/css" rel="stylesheet" />
+			<link href="/res/css/min/c9668bb6707d00bb09a1cc28d64ff7e5.css" type="text/css" rel="stylesheet" />
 
 	
 			
@@ -86,7 +87,7 @@
 		<div class="title">
 			<h2 class="entry-title">경주 시내버스 보우주택 정류소(청년회의소 방향) 실시간 버스 도착정보</h2>
 						<time class="published hide" datetime="2020-09-08 15:29:02">2020.09.08. 15:29</time>
-			<time class="updated hide" datetime="2020-10-07 09:06:35">2020.10.07. 09:06</time>
+			<time class="updated hide" datetime="2020-10-07 13:16:28">2020.10.07. 13:16</time>
 			<span class="vcard author hide"><span class="fn">yohan1002@gmail.com</span></span>
 		</div>
 		-->
@@ -97,6 +98,9 @@
 	<input type="hidden" id="stationName" name="stationName" value="보우주택" />
 	<input type="hidden" id="stationDirection" name="stationDirection" value="청년회의소 방향" />
 	<input type="hidden" id="stationLink" name="stationLink" value="/경주시/정류소/보우주택/" />
+
+	<input type="hidden" id="stationLat" name="stationLat" value="35.84382539" />
+	<input type="hidden" id="stationLng" name="stationLng" value="129.20051407" />
 
 	<div class="tabs">
 		<div class='tabs-menu'>
@@ -119,7 +123,8 @@
 	</div>
 </div>		<div class="tabs-content">
 			<div class="actions">
-				<button type="button" id="refresh">새로고침</button>
+									<button type="button" id="btnSearchingLocation"  class="mapSearch">정류소 위치확인</button>
+								<button type="button" id="refresh">새로고침</button>
 			</div>
 
 			<ul id="routeNumbers" class="clearfix list">
@@ -291,14 +296,14 @@
 							<small class="routeTp">&nbsp;</small>
 						</a>
 					</li>
-									<li class="item routeNo" data-no="KUB352000374">
-						<a class="box-link" href="/경주시/버스/212-3/" target="_blank" title="경주시 시내버스 212번 노선안내">
+									<li class="item routeNo" data-no="KUB352000054">
+						<a class="box-link" href="/경주시/버스/212/" target="_blank" title="경주시 시내버스 212번 노선안내">
 							212
 							<small class="routeTp">&nbsp;</small>
 						</a>
 					</li>
-									<li class="item routeNo" data-no="KUB352000054">
-						<a class="box-link" href="/경주시/버스/212/" target="_blank" title="경주시 시내버스 212번 노선안내">
+									<li class="item routeNo" data-no="KUB352000374">
+						<a class="box-link" href="/경주시/버스/212-3/" target="_blank" title="경주시 시내버스 212번 노선안내">
 							212
 							<small class="routeTp">&nbsp;</small>
 						</a>
@@ -309,14 +314,14 @@
 							<small class="routeTp">&nbsp;</small>
 						</a>
 					</li>
-									<li class="item routeNo" data-no="KUB352000375">
-						<a class="box-link" href="/경주시/버스/216-2/" target="_blank" title="경주시 시내버스 216번 노선안내">
+									<li class="item routeNo" data-no="KUB352000055">
+						<a class="box-link" href="/경주시/버스/216/" target="_blank" title="경주시 시내버스 216번 노선안내">
 							216
 							<small class="routeTp">&nbsp;</small>
 						</a>
 					</li>
-									<li class="item routeNo" data-no="KUB352000055">
-						<a class="box-link" href="/경주시/버스/216/" target="_blank" title="경주시 시내버스 216번 노선안내">
+									<li class="item routeNo" data-no="KUB352000375">
+						<a class="box-link" href="/경주시/버스/216-2/" target="_blank" title="경주시 시내버스 216번 노선안내">
 							216
 							<small class="routeTp">&nbsp;</small>
 						</a>
@@ -333,14 +338,14 @@
 							<small class="routeTp">&nbsp;</small>
 						</a>
 					</li>
-									<li class="item routeNo" data-no="KUB352000381">
-						<a class="box-link" href="/경주시/버스/217-4/" target="_blank" title="경주시 시내버스 217번 노선안내">
+									<li class="item routeNo" data-no="KUB352000059">
+						<a class="box-link" href="/경주시/버스/217/" target="_blank" title="경주시 시내버스 217번 노선안내">
 							217
 							<small class="routeTp">&nbsp;</small>
 						</a>
 					</li>
-									<li class="item routeNo" data-no="KUB352000059">
-						<a class="box-link" href="/경주시/버스/217/" target="_blank" title="경주시 시내버스 217번 노선안내">
+									<li class="item routeNo" data-no="KUB352000381">
+						<a class="box-link" href="/경주시/버스/217-4/" target="_blank" title="경주시 시내버스 217번 노선안내">
 							217
 							<small class="routeTp">&nbsp;</small>
 						</a>
@@ -453,14 +458,14 @@
 							<small class="routeTp">&nbsp;</small>
 						</a>
 					</li>
-									<li class="item routeNo" data-no="KUB352000307">
-						<a class="box-link" href="/경주시/버스/271-3/" target="_blank" title="경주시 시내버스 271번 노선안내">
+									<li class="item routeNo" data-no="KUB352000082">
+						<a class="box-link" href="/경주시/버스/271/" target="_blank" title="경주시 시내버스 271번 노선안내">
 							271
 							<small class="routeTp">&nbsp;</small>
 						</a>
 					</li>
-									<li class="item routeNo" data-no="KUB352000082">
-						<a class="box-link" href="/경주시/버스/271/" target="_blank" title="경주시 시내버스 271번 노선안내">
+									<li class="item routeNo" data-no="KUB352000307">
+						<a class="box-link" href="/경주시/버스/271-3/" target="_blank" title="경주시 시내버스 271번 노선안내">
 							271
 							<small class="routeTp">&nbsp;</small>
 						</a>
@@ -489,14 +494,14 @@
 							<small class="routeTp">&nbsp;</small>
 						</a>
 					</li>
-									<li class="item routeNo" data-no="KUB352000215">
-						<a class="box-link" href="/경주시/버스/272-8/" target="_blank" title="경주시 시내버스 272번 노선안내">
+									<li class="item routeNo" data-no="KUB352000083">
+						<a class="box-link" href="/경주시/버스/272/" target="_blank" title="경주시 시내버스 272번 노선안내">
 							272
 							<small class="routeTp">&nbsp;</small>
 						</a>
 					</li>
-									<li class="item routeNo" data-no="KUB352000083">
-						<a class="box-link" href="/경주시/버스/272/" target="_blank" title="경주시 시내버스 272번 노선안내">
+									<li class="item routeNo" data-no="KUB352000215">
+						<a class="box-link" href="/경주시/버스/272-8/" target="_blank" title="경주시 시내버스 272번 노선안내">
 							272
 							<small class="routeTp">&nbsp;</small>
 						</a>
@@ -758,6 +763,6 @@
 </footer>
 
 
-<script src="/res/js/min/0db15835e21b661374e26dbb660dbc16.js" async="true" type="text/javascript"></script>
+<script src="/res/js/min/aa2461274e08d61125d2b685569973d7.js" async="true" type="text/javascript"></script>
 </body>
 </html>

@@ -29,7 +29,8 @@
 	<meta name="HandheldFriendly" content="True">
 	<meta name="MobileOptimized" content="320">
 
-		
+							<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=40563640974538c7722ebb33897ddb7a"></script>
+			
 	
 	<meta property="og:type" content="article">
 	<meta property="og:site_name" content="경주시내버스">
@@ -54,7 +55,7 @@
 						
 	<link rel="alternate" type="application/rss+xml" title="경주시내버스" href="https://gjbus.yohan1002.com/atom.xml"/>
 
-			<link href="/res/css/min/8f3a3620b638313bdf778bcdd227c1e7.css" type="text/css" rel="stylesheet" />
+			<link href="/res/css/min/c9668bb6707d00bb09a1cc28d64ff7e5.css" type="text/css" rel="stylesheet" />
 
 	
 			
@@ -98,6 +99,9 @@
 	<input type="hidden" id="stationDirection" name="stationDirection" value="나정리 방향" />
 	<input type="hidden" id="stationLink" name="stationLink" value="/경주시/정류소/대본1리-1/" />
 
+	<input type="hidden" id="stationLat" name="stationLat" value="35.76036667" />
+	<input type="hidden" id="stationLng" name="stationLng" value="129.4917667" />
+
 	<div class="tabs">
 		<div class='tabs-menu'>
 	<div class='ttl'>
@@ -119,7 +123,8 @@
 	</div>
 </div>		<div class="tabs-content">
 			<div class="actions">
-				<button type="button" id="refresh">새로고침</button>
+									<button type="button" id="btnSearchingLocation"  class="mapSearch">정류소 위치확인</button>
+								<button type="button" id="refresh">새로고침</button>
 			</div>
 
 			<ul id="routeNumbers" class="clearfix list">
@@ -212,6 +217,6 @@
 </footer>
 
 
-<script src="/res/js/min/0db15835e21b661374e26dbb660dbc16.js" async="true" type="text/javascript"></script>
+<script src="/res/js/min/aa2461274e08d61125d2b685569973d7.js" async="true" type="text/javascript"></script>
 </body>
 </html>
