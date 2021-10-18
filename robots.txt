@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://gjbus.yohan1002.com/sitemap.xml
